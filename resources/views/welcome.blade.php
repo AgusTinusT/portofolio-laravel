@@ -353,5 +353,14 @@
     </section>
 
 </body>
-
+<footer id="footer" class="bg-gray-darker">
+    <div class="container mx-auto px-6 py-6">
+        <p class="text-center text-sm text-gray-400">
+            © {{ date('Y') }} Agus Tinus Turnip. All Rights Reserved.
+            <span class="hidden sm:inline-block mx-2">|</span>
+            <br class="sm:hidden">
+            Dibangun dengan <span class="text-red-500">♥</span> menggunakan Laravel & Tailwind CSS.
+        </p>
+    </div>
+</footer>
 </html>
