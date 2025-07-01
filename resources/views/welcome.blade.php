@@ -12,26 +12,79 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     @vite('resources/css/app.css')
     <title>Home</title>
 </head>
-<header>
-    <nav class="bg-gray-800 text-white">
-        <div class="container mx-auto flex justify-between items-center py-4">
-            <a href="">
-                <img class="h-10 w-10" src="{{ asset('images/java.png') }}" alt="">
-            </a>
-            <div class="flex">
-                <a href="" class="text-xl hover:text-indigo-600 transition duration-300 pr-6">home</a>
-                <a href="" class="text-xl hover:text-indigo-600 transition duration-300 pr-6">about</a>
-                <a href="" class="text-xl hover:text-indigo-600 transition duration-300">contact</a>
-            </div>
+<!-- Header - Sticky, Responsive, Themed -->
+<header class="bg-white/90 dark:bg-gray-darker/90 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center px-6 py-4">
+
+        <!-- Branding / Logo -->
+        <a href="#introduction"
+            class="font-heading font-bold text-2xl text-gray-heading dark:text-white hover:text-primary-500 transition-colors">
+            ATT.
+        </a>
+
+        <!-- Menu Navigasi Desktop -->
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#introduction"
+                class="font-body text-base text-gray-text dark:text-gray-300 hover:text-primary-500 transition-colors">Home</a>
+            <a href="#what-i-do"
+                class="font-body text-base text-gray-text dark:text-gray-300 hover:text-primary-500 transition-colors">Layanan</a>
+            <a href="#projects"
+                class="font-body text-base text-gray-text dark:text-gray-300 hover:text-primary-500 transition-colors">Proyek</a>
+            <a href="#contact"
+                class="font-body text-base text-gray-text dark:text-gray-300 hover:text-primary-500 transition-colors">Kontak</a>
+            <!-- Tombol Dark Mode untuk Desktop -->
+            <button class="dark-mode-toggler ml-4 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                <span class="sr-only">Toggle Dark Mode</span>
+                <span class="dark:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-gray-heading">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                    </svg>
+                </span>
+                <span class="hidden dark:inline">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-yellow-400">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.95-4.243l-1.59-1.591M3.75 12H6m4.95-7.757l-1.59 1.591" />
+                    </svg>
+                </span>
+            </button>
+        </div>
+
+        <!-- Tombol Hamburger untuk Mobile -->
+        <div class="md:hidden">
+            <button id="hamburger-button" class="text-gray-heading dark:text-white">
+                <span class="sr-only">Buka Menu</span>
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
         </div>
     </nav>
+
+    <!-- Menu Navigasi Mobile (Disembunyikan secara default) -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
+        <a href="#introduction"
+            class="block font-semibold text-gray-text dark:text-gray-300 hover:bg-gray-light dark:hover:bg-gray-700 p-2 rounded-md">Home</a>
+        <a href="#what-i-do"
+            class="block font-semibold text-gray-text dark:text-gray-300 hover:bg-gray-light dark:hover:bg-gray-700 p-2 rounded-md">Layanan</a>
+        <a href="#projects"
+            class="block font-semibold text-gray-text dark:text-gray-300 hover:bg-gray-light dark:hover:bg-gray-700 p-2 rounded-md">Proyek</a>
+        <a href="#contact"
+            class="block font-semibold text-gray-text dark:text-gray-300 hover:bg-gray-light dark:hover:bg-gray-700 p-2 rounded-md">Kontak</a>
+        <hr class="border-gray-200 dark:border-gray-700 my-2">
+        <div
+            class="dark-mode-toggler flex justify-between items-center text-gray-text dark:text-gray-300 hover:bg-gray-light dark:hover:bg-gray-700 p-2 rounded-md">
+            <span>Mode Tampilan</span>
+            <span class="dark:hidden">🌙</span>
+            <span class="hidden dark:inline">☀️</span>
+        </div>
+    </div>
 </header>
 
 <body>
@@ -104,8 +157,8 @@
                     <!-- Ikon Besar -->
                     <div class="p-4 bg-blue-100 rounded-full inline-block mb-6">
                         <!-- SVG Heroicon: device-phone-mobile -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-10 h-10 text-primary-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-primary-600">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                         </svg>
@@ -130,8 +183,8 @@
                     <!-- Ikon Besar -->
                     <div class="p-4 bg-green-100 rounded-full inline-block mb-6">
                         <!-- SVG Heroicon: code-bracket -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-10 h-10 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-600">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
                         </svg>
@@ -159,8 +212,8 @@
                     <!-- Ikon Besar -->
                     <div class="p-4 bg-purple-100 rounded-full inline-block mb-6">
                         <!-- SVG Heroicon: cloud-arrow-up -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-10 h-10 text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-purple-600">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M12 16.5V9.75m0 0l-3.75 3.75M12 9.75l3.75 3.75M17.25 21L21 17.25l-3.75-3.75M12 21l-3.75-3.75M12 21l3.75-3.75M3 17.25l3.75 3.75L12 21l-3.75-3.75m3.75-3.75L12 12m0 0l-3.75 3.75" />
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -305,7 +358,7 @@
                     Saya selalu terbuka untuk mendiskusikan proyek pengembangan produk, kemitraan, atau peluang
                     kolaborasi yang menarik. Jangan ragu untuk menghubungi saya.
                 </p>
-           <!-- Tombol Aksi Utama -->
+                <!-- Tombol Aksi Utama -->
                 <a href="mailto:agus.tinus.turnip.work@gmail.com"
                     class="inline-block px-12 py-5 bg-primary-600 font-bold text-lg rounded-lg shadow-lg hover:bg-primary-700 transition-all duration-300 transform hover:-translate-y-1">
                     <span class="flex items-center gap-3">
@@ -363,4 +416,5 @@
         </p>
     </div>
 </footer>
+
 </html>
