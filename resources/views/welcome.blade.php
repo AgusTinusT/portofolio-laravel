@@ -83,90 +83,208 @@
             </div>
         </div>
     </section>
-<section id="what-i-do" class="bg-white py-24">
-    <div class="container mx-auto px-6">
+    <section id="what-i-do" class="bg-white py-24">
+        <div class="container mx-auto px-6">
 
-        <!-- Judul Section -->
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="font-heading text-5xl font-extrabold text-gray-heading mb-4">Layanan & Keahlian</h2>
-            <p class="font-body text-xl text-gray-text">
-                Saya menawarkan solusi end-to-end, mulai dari pengembangan aplikasi mobile native hingga backend web yang tangguh dan skalabel.
-            </p>
+            <!-- Judul Section -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading text-5xl font-extrabold text-gray-heading mb-4">Layanan & Keahlian</h2>
+                <p class="font-body text-xl text-gray-text">
+                    Saya menawarkan solusi end-to-end, mulai dari pengembangan aplikasi mobile native hingga backend web
+                    yang tangguh dan skalabel.
+                </p>
+            </div>
+
+            <!-- Grid untuk Kartu Layanan -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- KARTU 1: PENGEMBANGAN MOBILE -->
+                <div
+                    class="group bg-gray-light p-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Ikon Besar -->
+                    <div class="p-4 bg-blue-100 rounded-full inline-block mb-6">
+                        <!-- SVG Heroicon: device-phone-mobile -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-10 h-10 text-primary-600">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                        </svg>
+                    </div>
+                    <!-- Konten Teks -->
+                    <h3 class="font-heading text-2xl font-bold text-gray-heading mb-3">Pengembangan Mobile</h3>
+                    <p class="font-body text-base text-gray-text mb-6">
+                        Membangun aplikasi native dan cross-platform yang responsif dan kaya fitur, dengan fokus pada
+                        user experience yang optimal.
+                    </p>
+                    <!-- Badge Teknologi -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="font-mono text-sm bg-blue-200 text-blue-800 px-3 py-1 rounded-full">Kotlin</span>
+                        <span class="font-mono text-sm bg-blue-200 text-blue-800 px-3 py-1 rounded-full">Flutter</span>
+                        <span class="font-mono text-sm bg-blue-200 text-blue-800 px-3 py-1 rounded-full">MVVM</span>
+                    </div>
+                </div>
+
+                <!-- KARTU 2: PENGEMBANGAN WEB -->
+                <div
+                    class="group bg-gray-light p-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Ikon Besar -->
+                    <div class="p-4 bg-green-100 rounded-full inline-block mb-6">
+                        <!-- SVG Heroicon: code-bracket -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-10 h-10 text-green-600">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                        </svg>
+                    </div>
+                    <!-- Konten Teks -->
+                    <h3 class="font-heading text-2xl font-bold text-gray-heading mb-3">Pengembangan Web</h3>
+                    <p class="font-body text-base text-gray-text mb-6">
+                        Merancang backend yang kuat dan aman dengan Laravel, serta antarmuka dinamis menggunakan
+                        Tailwind CSS dan JavaScript.
+                    </p>
+                    <!-- Badge Teknologi -->
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="font-mono text-sm bg-green-200 text-green-800 px-3 py-1 rounded-full">Laravel</span>
+                        <span class="font-mono text-sm bg-green-200 text-green-800 px-3 py-1 rounded-full">Tailwind
+                            CSS</span>
+                        <span class="font-mono text-sm bg-green-200 text-green-800 px-3 py-1 rounded-full">RESTful
+                            API</span>
+                    </div>
+                </div>
+
+                <!-- KARTU 3: TOOLS & DEPLOYMENT -->
+                <div
+                    class="group bg-gray-light p-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Ikon Besar -->
+                    <div class="p-4 bg-purple-100 rounded-full inline-block mb-6">
+                        <!-- SVG Heroicon: cloud-arrow-up -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-10 h-10 text-purple-600">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 16.5V9.75m0 0l-3.75 3.75M12 9.75l3.75 3.75M17.25 21L21 17.25l-3.75-3.75M12 21l-3.75-3.75M12 21l3.75-3.75M3 17.25l3.75 3.75L12 21l-3.75-3.75m3.75-3.75L12 12m0 0l-3.75 3.75" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 16.5V9.75m0 0l-3.75 3.75M12 9.75l3.75 3.75m-7.5-3L4.5 12l3.75-3.75" />
+                        </svg>
+                    </div>
+                    <!-- Konten Teks -->
+                    <h3 class="font-heading text-2xl font-bold text-gray-heading mb-3">Tools & DevOps</h3>
+                    <p class="font-body text-base text-gray-text mb-6">
+                        Manajemen kode sumber dengan Git, desain database, dan proses deployment aplikasi ke server
+                        produksi.
+                    </p>
+                    <!-- Badge Teknologi -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="font-mono text-sm bg-purple-200 text-purple-800 px-3 py-1 rounded-full">Git</span>
+                        <span
+                            class="font-mono text-sm bg-purple-200 text-purple-800 px-3 py-1 rounded-full">MySQL</span>
+                        <span
+                            class="font-mono text-sm bg-purple-200 text-purple-800 px-3 py-1 rounded-full">CI/CD</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
+    <!-- section#projects - Showcase Proyek Unggulan -->
 
-        <!-- Grid untuk Kartu Layanan -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="projects" class="bg-gray-light py-24">
+        <div class="container mx-auto px-6">
 
-            <!-- KARTU 1: PENGEMBANGAN MOBILE -->
-            <div class="group bg-gray-light p-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
-                <!-- Ikon Besar -->
-                <div class="p-4 bg-blue-100 rounded-full inline-block mb-6">
-                    <!-- SVG Heroicon: device-phone-mobile -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-primary-600">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                    </svg>
-                </div>
-                <!-- Konten Teks -->
-                <h3 class="font-heading text-2xl font-bold text-gray-heading mb-3">Pengembangan Mobile</h3>
-                <p class="font-body text-base text-gray-text mb-6">
-                    Membangun aplikasi native dan cross-platform yang responsif dan kaya fitur, dengan fokus pada user experience yang optimal.
+            <!-- Judul Section -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading text-5xl font-extrabold text-gray-heading mb-4">Proyek Unggulan</h2>
+                <p class="font-body text-xl text-gray-text">
+                    Berikut adalah beberapa proyek yang telah saya kerjakan, menunjukkan aplikasi dari keahlian saya
+                    dalam pengembangan nyata.
                 </p>
-                <!-- Badge Teknologi -->
-                <div class="flex flex-wrap gap-2">
-                    <span class="font-mono text-sm bg-blue-200 text-blue-800 px-3 py-1 rounded-full">Kotlin</span>
-                    <span class="font-mono text-sm bg-blue-200 text-blue-800 px-3 py-1 rounded-full">Flutter</span>
-                    <span class="font-mono text-sm bg-blue-200 text-blue-800 px-3 py-1 rounded-full">MVVM</span>
-                </div>
             </div>
 
-            <!-- KARTU 2: PENGEMBANGAN WEB -->
-            <div class="group bg-gray-light p-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
-                <!-- Ikon Besar -->
-                <div class="p-4 bg-green-100 rounded-full inline-block mb-6">
-                    <!-- SVG Heroicon: code-bracket -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-600">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                    </svg>
-                </div>
-                <!-- Konten Teks -->
-                <h3 class="font-heading text-2xl font-bold text-gray-heading mb-3">Pengembangan Web</h3>
-                <p class="font-body text-base text-gray-text mb-6">
-                    Merancang backend yang kuat dan aman dengan Laravel, serta antarmuka dinamis menggunakan Tailwind CSS dan JavaScript.
-                </p>
-                <!-- Badge Teknologi -->
-                <div class="flex flex-wrap gap-2">
-                    <span class="font-mono text-sm bg-green-200 text-green-800 px-3 py-1 rounded-full">Laravel</span>
-                    <span class="font-mono text-sm bg-green-200 text-green-800 px-3 py-1 rounded-full">Tailwind CSS</span>
-                    <span class="font-mono text-sm bg-green-200 text-green-800 px-3 py-1 rounded-full">RESTful API</span>
-                </div>
-            </div>
+            <!-- Grid untuk Kartu Proyek -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-            <!-- KARTU 3: TOOLS & DEPLOYMENT -->
-            <div class="group bg-gray-light p-8 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
-                <!-- Ikon Besar -->
-                <div class="p-4 bg-purple-100 rounded-full inline-block mb-6">
-                    <!-- SVG Heroicon: cloud-arrow-up -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-purple-600">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l-3.75 3.75M12 9.75l3.75 3.75M17.25 21L21 17.25l-3.75-3.75M12 21l-3.75-3.75M12 21l3.75-3.75M3 17.25l3.75 3.75L12 21l-3.75-3.75m3.75-3.75L12 12m0 0l-3.75 3.75" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l-3.75 3.75M12 9.75l3.75 3.75m-7.5-3L4.5 12l3.75-3.75" />
-                    </svg>
+                <!-- KARTU PROYEK 1 -->
+                <div
+                    class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Gambar Proyek -->
+                    <div class="relative">
+                        <img src="{{ asset('images/project-1.jpg') }}" alt="Screenshot Proyek E-Commerce Kamera"
+                            class="w-full h-56 object-cover">
+                        <!-- Overlay saat hover untuk menampilkan link -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center gap-4">
+                            <a href="#" target="_blank"
+                                class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform_ translate-y-4 group-hover:translate-y-0 flex items-center gap-2 bg-primary-600 px-4 py-2 rounded-lg">
+                                <svg class="w-5 h-5" ...>...</svg> <!-- Ikon "link" -->
+                                Live Demo
+                            </a>
+                            <a href="#" target="_blank"
+                                class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 flex items-center gap-2 bg-gray-700 px-4 py-2 rounded-lg">
+                                <svg class="w-5 h-5" ...>...</svg> <!-- Ikon "github" -->
+                                Kode
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Konten Teks Proyek -->
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-heading mb-2">Sistem E-Commerce Kamera
+                        </h3>
+                        <p class="font-body text-base text-gray-text mb-6">
+                            Platform e-commerce fungsional dengan fitur katalog produk, keranjang belanja, dan halaman
+                            checkout yang responsif.
+                        </p>
+                        <!-- Badge Teknologi -->
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="font-mono text-sm bg-red-100 text-red-800 px-3 py-1 rounded-full">Laravel</span>
+                            <span
+                                class="font-mono text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Tailwind</span>
+                            <span
+                                class="font-mono text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                    </div>
                 </div>
-                <!-- Konten Teks -->
-                <h3 class="font-heading text-2xl font-bold text-gray-heading mb-3">Tools & DevOps</h3>
-                <p class="font-body text-base text-gray-text mb-6">
-                    Manajemen kode sumber dengan Git, desain database, dan proses deployment aplikasi ke server produksi.
-                </p>
-                <!-- Badge Teknologi -->
-                <div class="flex flex-wrap gap-2">
-                    <span class="font-mono text-sm bg-purple-200 text-purple-800 px-3 py-1 rounded-full">Git</span>
-                    <span class="font-mono text-sm bg-purple-200 text-purple-800 px-3 py-1 rounded-full">MySQL</span>
-                    <span class="font-mono text-sm bg-purple-200 text-purple-800 px-3 py-1 rounded-full">CI/CD</span>
+
+                <!-- KARTU PROYEK 2 (Contoh Lain) -->
+                <div
+                    class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Gambar Proyek -->
+                    <div class="relative">
+                        <img src="{{ asset('images/project-2.jpg') }}" alt="Screenshot Aplikasi Task Management"
+                            class="w-full h-56 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center gap-4">
+                            <!-- Links... -->
+                        </div>
+                    </div>
+                    <!-- Konten Teks Proyek -->
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-heading mb-2">Aplikasi Task Management
+                        </h3>
+                        <p class="font-body text-base text-gray-text mb-6">
+                            Aplikasi web untuk mengelola tugas harian, dibuat dengan TALL Stack (Tailwind, Alpine,
+                            Livewire, Laravel).
+                        </p>
+                        <!-- Badge Teknologi -->
+                        <div class="flex flex-wrap gap-2">
+                            <span class="font-mono text-sm bg-gray-200 text-gray-800 px-3 py-1 rounded-full">TALL
+                                Stack</span>
+                            <span
+                                class="font-mono text-sm bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Livewire</span>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- KARTU PROYEK 3 (Placeholder) -->
+                <div
+                    class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                    <!-- Konten kartu ketiga... -->
+                </div>
+
             </div>
 
         </div>
-    </div>
-</section>
+    </section>
 </body>
 
 </html>
