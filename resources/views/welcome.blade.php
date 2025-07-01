@@ -186,8 +186,6 @@
             </div>
         </div>
     </section>
-    <!-- section#projects - Showcase Proyek Unggulan -->
-
     <section id="projects" class="bg-gray-light py-24">
         <div class="container mx-auto px-6">
 
@@ -285,6 +283,75 @@
 
         </div>
     </section>
+    <section id="contact" class="bg-white py-24 sm:py-32">
+        <div class="container mx-auto px-6">
+
+            <!-- Kontainer Konten dengan Batasan Lebar -->
+            <div class="max-w-4xl mx-auto text-center">
+
+                <!-- Tagline Kecil -->
+                <p class="font-body font-bold text-primary-600 uppercase tracking-widest mb-4">
+                    Punya Ide?
+                </p>
+
+                <!-- Judul Utama Section -->
+                <h2
+                    class="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-heading leading-tight mb-6">
+                    Mari Wujudkan Bersama
+                </h2>
+
+                <!-- Deskripsi Ajakan -->
+                <p class="font-body text-xl text-gray-text max-w-2xl mx-auto mb-12">
+                    Saya selalu terbuka untuk mendiskusikan proyek pengembangan produk, kemitraan, atau peluang
+                    kolaborasi yang menarik. Jangan ragu untuk menghubungi saya.
+                </p>
+           <!-- Tombol Aksi Utama -->
+                <a href="mailto:agus.tinus.turnip.work@gmail.com"
+                    class="inline-block px-12 py-5 bg-primary-600 font-bold text-lg rounded-lg shadow-lg hover:bg-primary-700 transition-all duration-300 transform hover:-translate-y-1">
+                    <span class="flex items-center gap-3">
+                        <!-- Ikon Surat (SVG Heroicon) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                        Hubungi Saya via Email
+                    </span>
+                </a>
+
+                <!-- Pemisah dan Link Sosial -->
+                <div class="mt-16">
+                    <p class="text-gray-500 mb-4">Atau temukan saya di platform lain:</p>
+                    <div class="flex justify-center space-x-8">
+                        <!-- Ikon LinkedIn -->
+                        <a href="https://www.linkedin.com/in/agus-tinus-turnip" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-primary-500 transition-colors"
+                            title="LinkedIn">
+                            <span class="sr-only">LinkedIn</span> <!-- Untuk aksesibilitas screen reader -->
+                            <svg class="w-8 h-8" fill="currentColor" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                            </svg>
+                        </a>
+                        <!-- Ikon GitHub -->
+                        <a href="https://github.com/AgusTinusT" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-primary-500 transition-colors" title="GitHub">
+                            <span class="sr-only">GitHub</span> <!-- Untuk aksesibilitas -->
+                            <svg class="w-8 h-8" fill="currentColor" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
 </body>
 
 </html>
