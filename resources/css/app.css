@@ -8,4 +8,17 @@
 @theme {
     --font-family-heading: "Inter", "sans-serif";
     --font-family-body: "Source Sans 3", "sans-serif";
+
+    --color-primary-500: #3b82f6;
+    --color-primary-600: #2563eb;
+    --color-primary-700: #1d4ed8;
+
+    --color-gray-light: #f3f4f6;
+    --color-gray-medium: #d1d5db;
+    --color-gray-dark: #1f2937;
+    --color-gray-darker: #111827;
+
+    --color-gray-light: #f3f4f6;
+    --color-gray-dark: #1f2937;
+    --color-gray-darker: #111827;
 }
