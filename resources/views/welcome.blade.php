@@ -12,10 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
         rel="stylesheet">
 
-    @vite('resources/css/app.css')
     <title>Home</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<!-- Header - Sticky, Responsive, Themed -->
 <header class="bg-white/90 dark:bg-gray-darker/90 backdrop-blur-lg sticky top-0 z-50 shadow-md">
     <nav class="container mx-auto flex justify-between items-center px-6 py-4">
 

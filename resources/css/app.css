@@ -18,7 +18,8 @@
     --color-gray-dark: #1f2937;
     --color-gray-darker: #111827;
 
-    --color-gray-light: #f3f4f6;
-    --color-gray-dark: #1f2937;
-    --color-gray-darker: #111827;
+    --color-gray-text: #4b5563;
+    --color-gray-heading: #111827;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
