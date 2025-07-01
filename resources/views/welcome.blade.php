@@ -88,35 +88,43 @@
 </header>
 
 <body>
-    <section id="introduction" class="bg-gray-light">
-        <!-- Menggunakan min-h-screen untuk memastikan section ini setidaknya setinggi layar -->
+    <section id="introduction" class="bg-gray-light dark:bg-gray-darker">
         <div class="container mx-auto px-6 min-h-screen flex items-center justify-center">
-            <!-- Padding vertikal untuk memberi ruang di atas dan bawah -->
-            <div class="py-24 w-full grid grid-cols-5 gap-16 items-center">
+            <!-- Padding vertikal untuk memberi ruang -->
+            <div class="py-20 w-full grid grid-cols-1 gap-8 items-center lg:grid-cols-5 lg:gap-16">
 
-                <!-- Kolom Teks - Mengambil 3 dari 5 bagian grid (60%) -->
-                <div class="col-span-3">
-                    <p class="font-body font-bold text-primary-600 uppercase tracking-widest mb-4">
+                <!-- Kolom Gambar - Muncul pertama di mobile secara default -->
+                <div class="lg:col-span-2 lg:order-2 flex justify-center items-center">
+                    <img src="{{ asset('images/undraw_web-devices.svg') }}" alt="Ilustrasi Pengembangan Web dan Mobile"
+                        class="w-full max-w-sm md:max-w-md">
+                </div>
+
+                <!-- Kolom Teks - Muncul kedua di mobile -->
+                <div class="lg:col-span-3 lg:order-1 text-center lg:text-left">
+                    <p class="font-body font-bold text-primary-500 uppercase tracking-widest mb-4">
                         Full-Stack Developer
                     </p>
-                    <h1 class="font-heading text-7xl font-extrabold text-gray-heading leading-tight mb-6">
+                    <!-- Font size responsif: kecil di mobile, besar di desktop -->
+                    <h1
+                        class="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-heading dark:text-white leading-tight mb-6">
                         Agus Tinus Turnip
                     </h1>
-                    <p class="font-body text-xl text-gray-text leading-relaxed max-w-2xl mb-12">
+                    <!-- max-w diatur agar tidak terlalu lebar di mobile -->
+                    <p
+                        class="font-body text-lg text-gray-text dark:text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-10">
                         Saya merancang dan membangun aplikasi web dan mobile yang modern, intuitif, dan berkinerja
                         tinggi, mengubah ide menjadi solusi digital yang nyata.
                     </p>
 
-                    <!-- Tombol Call to Action (CTA) -->
-                    <div class="flex gap-4">
+                    <!-- Tombol CTA - Responsif -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <a href="#projects"
-                            class="px-8 py-4 bg-primary-600 text-white font-bold rounded-lg shadow-lg hover:bg-primary-700 transition-transform transform hover:-translate-y-1 duration-300">
+                            class="px-8 py-3 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition-colors shadow-lg transform hover:scale-105 duration-300">
                             Lihat Proyek Saya
                         </a>
                         <a href="https://github.com/AgusTinusT" target="_blank" rel="noopener noreferrer"
-                            class="px-8 py-4 bg-white text-gray-heading font-bold rounded-lg shadow-lg hover:bg-gray-200 transition-transform transform hover:-translate-y-1 duration-300 flex items-center gap-3">
-                            <!-- Ikon GitHub (SVG In-line untuk kualitas dan kontrol) -->
-                            <svg class="w-6 h-6" role="img" viewBox="0 0 24 24" fill="currentColor"
+                            class="px-8 py-3 bg-white dark:bg-gray-700 text-gray-heading dark:text-white font-bold rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors shadow-lg transform hover:scale-105 duration-300 flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" role="img" viewBox="0 0 24 24" fill="currentColor"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <title>GitHub</title>
                                 <path
@@ -125,12 +133,6 @@
                             GitHub
                         </a>
                     </div>
-                </div>
-
-                <!-- Kolom Gambar - Mengambil 2 dari 5 bagian grid (40%) -->
-                <div class="col-span-2 flex justify-center items-center">
-                    <img src="{{ asset('images/undraw_web-devices.svg') }}" alt="Ilustrasi Pengembangan Web dan Mobile"
-                        class="w-full h-auto">
                 </div>
 
             </div>
